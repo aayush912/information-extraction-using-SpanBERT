@@ -1,0 +1,557 @@
+Script started on 2021-03-15 15:37:01+0000
+]0;av2955@instance-1: ~/SpanBERT[01;32mav2955@instance-1[00m:[01;34m~/SpanBERT[00m$ python3 craft.py 
+Loading pre-trained spanBERT from ./pretrained_spanbert
+
+Enter Google Search Key: AIzaSyDFLI4iu83nBdeuUJkQTDH739PIyUqKuVM
+Enter Engine Key: 3ad87265822f5240e
+Enter Relation Needed: 2
+Enter Threshold Needed: 0.7
+Enter Number of Tuples to Find: 10
+Enter Query: bill gates microsoft
+
+-------- PARAMETERS ---------
+Client Key       =  AIzaSyDFLI4iu83nBdeuUJkQTDH739PIyUqKuVM
+Engine Key       =  3ad87265822f5240e
+Relation         =  per:employee_of
+Threshold        =  0.7
+Query            =  bill gates microsoft
+Number of Tuples =  10
+-----------------------------
+=========== Iteration: 1 - Query: bill gates microsoft ===========
+URL (  1  / 10 ):  https://en.wikipedia.org/wiki/Bill_Gates
+	Fetching text from URL...
+	Webpage Length (number of characters):  20000
+	Annotating the webpage using SpaCy
+
+	Extracted  119  sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+	Processed 5/119 sentences
+	Processed 10/119 sentences
+		========== EXTRACTED RELATION ==========
+		Sentence =  In March 2020, Gates left his board positions at Microsoft and Berkshire Hathaway to focus on his philanthropic endeavors including climate change, global health and development, and education.[12] Since 1987, he has been included in the Forbes list of the world s wealthiest people.[13][14] From 1995 to 2017, he held the Forbes title of the richest person in the world all but four of those years.[15]
+		Confidence =  0.99471635
+		Subject =  Gates
+		Object =  Microsoft
+		Relation =  per:employee_of
+
+
+		Adding relation to final set
+
+
+	Processed 15/119 sentences
+		========== EXTRACTED RELATION ==========
+		Sentence =  In October 2017, he was surpassed by Amazon founder and CEO Jeff Bezos, who had an estimated net worth of US$90.6billion compared to Gates s net worth of US$89.9billion at the time.[16]
+		Confidence =  0.9889342
+		Subject =  Jeff Bezos
+		Object =  Gates
+		Relation =  per:employee_of
+
+
+		Adding relation to final set
+
+
+	Processed 20/119 sentences
+	Processed 25/119 sentences
+	Processed 30/119 sentences
+	Processed 35/119 sentences
+	Processed 40/119 sentences
+	Processed 45/119 sentences
+		========== EXTRACTED RELATION ==========
+		Sentence =  Years later, Ballmer succeeded Gates as Microsoft s CEO and maintained that position from 2000 until his resignation in 2014.[43][44] Gates devised an algorithm for pancake sorting as a solution to one of a series of unsolved problems[45] presented in a combinatorics class by professor Harry Lewis.
+		Confidence =  0.9955553
+		Subject =  Ballmer
+		Object =  Microsoft
+		Relation =  per:employee_of
+
+
+		Adding relation to final set
+
+
+	Processed 50/119 sentences
+	Processed 55/119 sentences
+		========== EXTRACTED RELATION ==========
+		Sentence =  MITS hired Allen,[53] and Gates took a leave of absence from Harvard to work with him at MITS in November 1975.
+		Confidence =  0.6641727
+		Subject =  Gates
+		Object =  Harvard
+		Relation =  per:employee_of
+
+
+		Confidence less than required threshold. Ignoring this
+		========== EXTRACTED RELATION ==========
+		Sentence =  MITS hired Allen,[53] and Gates took a leave of absence from Harvard to work with him at MITS in November 1975.
+		Confidence =  0.80464137
+		Subject =  Gates
+		Object =  MITS
+		Relation =  per:employee_of
+
+
+		Adding relation to final set
+
+
+	Processed 60/119 sentences
+	Processed 65/119 sentences
+	Processed 70/119 sentences
+	Processed 75/119 sentences
+		========== EXTRACTED RELATION ==========
+		Sentence =  Later in the decade, Gates repaired his relationship with Allen and together the two donated millions to their childhood school Lakeside.[23] They remained friends until Allen s death in October 2018.[63] Microsoft launched its first retail version of Microsoft Windows on November 20, 1985.
+		Confidence =  0.9446849
+		Subject =  Allen
+		Object =  Microsoft
+		Relation =  per:employee_of
+
+
+		Adding relation to final set
+
+
+	Processed 80/119 sentences
+	Processed 85/119 sentences
+	Processed 90/119 sentences
+	Processed 95/119 sentences
+	Processed 100/119 sentences
+	Processed 105/119 sentences
+	Processed 110/119 sentences
+	Processed 115/119 sentences
+	Extracted relations for 34 out of total 119 sentences
+	From this website, the number of relations we got is: 5 (Overall:  5 )
+URL (  2  / 10 ):  https://www.gatesnotes.com/
+	Fetching text from URL...
+	Webpage Length (number of characters):  0
+	Annotating the webpage using SpaCy
+
+	Extracted  0  sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+	Extracted relations for 0 out of total 0 sentences
+	From this website, the number of relations we got is: 0 (Overall:  5 )
+URL (  3  / 10 ):  https://twitter.com/billgates?lang=en
+	Fetching text from URL...
+	Webpage Length (number of characters):  310
+	Annotating the webpage using SpaCy
+
+	Extracted  4  sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+	Extracted relations for 1 out of total 4 sentences
+	From this website, the number of relations we got is: 0 (Overall:  5 )
+URL (  4  / 10 ):  https://news.microsoft.com/2020/03/13/microsoft-announces-change-to-its-board-of-directors/
+	Fetching text from URL...
+	Webpage Length (number of characters):  0
+	Annotating the webpage using SpaCy
+
+	Extracted  0  sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+	Extracted relations for 0 out of total 0 sentences
+	From this website, the number of relations we got is: 0 (Overall:  5 )
+URL (  5  / 10 ):  https://www.nytimes.com/2020/03/13/technology/bill-gates-microsoft-board.html
+	Fetching text from URL...
+	Webpage Length (number of characters):  4749
+	Annotating the webpage using SpaCy
+
+	Extracted  40  sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+		========== EXTRACTED RELATION ==========
+		Sentence =  By Daisuke Wakabayashi and Steve Lohr SAN FRANCISCO — Bill Gates is stepping down from the board of Microsoft, the software giant he helped found more than four decades ago.
+		Confidence =  0.9890078
+		Subject =  Daisuke Wakabayashi
+		Object =  Microsoft
+		Relation =  per:employee_of
+
+
+		Adding relation to final set
+
+
+		========== EXTRACTED RELATION ==========
+		Sentence =  By Daisuke Wakabayashi and Steve Lohr SAN FRANCISCO — Bill Gates is stepping down from the board of Microsoft, the software giant he helped found more than four decades ago.
+		Confidence =  0.99262774
+		Subject =  Steve Lohr
+		Object =  Microsoft
+		Relation =  per:employee_of
+
+
+		Adding relation to final set
+
+
+		========== EXTRACTED RELATION ==========
+		Sentence =  By Daisuke Wakabayashi and Steve Lohr SAN FRANCISCO — Bill Gates is stepping down from the board of Microsoft, the software giant he helped found more than four decades ago.
+		Confidence =  0.6360853
+		Subject =  Bill Gates
+		Object =  Microsoft
+		Relation =  per:employee_of
+
+
+		Confidence less than required threshold. Ignoring this
+	Processed 5/40 sentences
+	Processed 10/40 sentences
+		========== EXTRACTED RELATION ==========
+		Sentence =  Mr. Gates remains one of the largest individual shareholders of Microsoft.
+		Confidence =  0.9486365
+		Subject =  Gates
+		Object =  Microsoft
+		Relation =  per:employee_of
+
+
+		Adding relation to final set
+
+
+		========== EXTRACTED RELATION ==========
+		Sentence =  He said he would remain active at the company and would work closely with Satya Nadella, Microsoft’s chief executive.
+		Confidence =  0.98912096
+		Subject =  Satya Nadella
+		Object =  Microsoft
+		Relation =  per:employee_of
+
+
+		Adding relation to final set
+
+
+	Processed 15/40 sentences
+	Processed 20/40 sentences
+		========== EXTRACTED RELATION ==========
+		Sentence =  Mr. Gates joined the Berkshire Hathaway board in 2004.
+		Confidence =  0.99727714
+		Subject =  Gates
+		Object =  Berkshire Hathaway
+		Relation =  per:employee_of
+
+
+		Adding relation to final set
+
+
+		========== EXTRACTED RELATION ==========
+		Sentence =  Daniel Ives, managing director of equity research at Wedbush Securities, said in a research note that Mr. Gates’s stepping down from the Microsoft board was not a surprise and that it was a vote of confidence for Mr. Nadella and the direction of the company.
+		Confidence =  0.98852307
+		Subject =  Daniel Ives
+		Object =  Wedbush Securities
+		Relation =  per:employee_of
+
+
+		Adding relation to final set
+
+
+	Processed 25/40 sentences
+		========== EXTRACTED RELATION ==========
+		Sentence =  Mr. Gates founded Microsoft in 1975, dropping out of Harvard and joining Paul Allen, his friend and technology collaborator since their teenage years at a private high school in Seattle.
+		Confidence =  0.9901818
+		Subject =  Gates
+		Object =  Microsoft
+		Relation =  per:employee_of
+
+
+		Adding relation to final set
+
+
+		========== EXTRACTED RELATION ==========
+		Sentence =  Mr. Gates founded Microsoft in 1975, dropping out of Harvard and joining Paul Allen, his friend and technology collaborator since their teenage years at a private high school in Seattle.
+		Confidence =  0.51436234
+		Subject =  Gates
+		Object =  Harvard
+		Relation =  per:employee_of
+
+
+		Confidence less than required threshold. Ignoring this
+	Processed 30/40 sentences
+	Processed 35/40 sentences
+	Processed 40/40 sentences
+	Extracted relations for 14 out of total 40 sentences
+	From this website, the number of relations we got is: 7 (Overall:  12 )
+URL (  6  / 10 ):  https://www.britannica.com/biography/Bill-Gates
+	Fetching text from URL...
+	Webpage Length (number of characters):  5819
+	Annotating the webpage using SpaCy
+
+	Extracted  39  sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+		========== EXTRACTED RELATION ==========
+		Sentence =  Bill Gates, in full William Henry Gates III,  (born October 28, 1955, Seattle, Washington, U.S.),  American computer programmer and entrepreneur who cofounded Microsoft Corporation, the world’s largest personal-computer software company.
+		Confidence =  0.81609255
+		Subject =  Bill Gates
+		Object =  Microsoft Corporation
+		Relation =  per:employee_of
+
+
+		Adding relation to final set
+
+
+		========== EXTRACTED RELATION ==========
+		Sentence =  Bill Gates, in full William Henry Gates III,  (born October 28, 1955, Seattle, Washington, U.S.),  American computer programmer and entrepreneur who cofounded Microsoft Corporation, the world’s largest personal-computer software company.
+		Confidence =  0.98376435
+		Subject =  William Henry Gates III
+		Object =  Microsoft Corporation
+		Relation =  per:employee_of
+
+
+		Adding relation to final set
+
+
+		========== EXTRACTED RELATION ==========
+		Sentence =  Bill Gates cofounded Microsoft Corporation, the world’s largest personal-computer software company.
+		Confidence =  0.9180271
+		Subject =  Bill Gates
+		Object =  Microsoft Corporation
+		Relation =  per:employee_of
+
+
+		Adding relation to final set
+
+
+	Processed 5/39 sentences
+		========== EXTRACTED RELATION ==========
+		Sentence =  Bill Gates founded the software company Microsoft Corporation with his friend Paul Allen.
+		Confidence =  0.98681915
+		Subject =  Bill Gates
+		Object =  Microsoft Corporation
+		Relation =  per:employee_of
+
+
+		Adding relation to final set
+
+
+	Processed 10/39 sentences
+	Processed 15/39 sentences
+	Processed 20/39 sentences
+	Processed 25/39 sentences
+	Processed 30/39 sentences
+		========== EXTRACTED RELATION ==========
+		Sentence =  After a short transition period, Gates relinquished day-to-day oversight of Microsoft in June 2008—although he remained chairman of the board—in order to devote more time to the Bill & Melinda Gates Foundation.
+		Confidence =  0.9124967
+		Subject =  Gates
+		Object =  the Bill & Melinda Gates Foundation
+		Relation =  per:employee_of
+
+
+		Adding relation to final set
+
+
+	Processed 35/39 sentences
+	Extracted relations for 9 out of total 39 sentences
+	From this website, the number of relations we got is: 5 (Overall:  17 )
+URL (  7  / 10 ):  https://www.technologyreview.com/2021/02/14/1018296/bill-gates-climate-change-beef-trees-microsoft/
+	Fetching text from URL...
+	Webpage Length (number of characters):  12011
+	Annotating the webpage using SpaCy
+
+	Extracted  111  sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+		========== EXTRACTED RELATION ==========
+		Sentence =  The Microsoft cofounder, who is now cochair of the Bill and Melinda Gates Foundation and chair of the investment fund Breakthrough Energy Ventures, sticks to his past argument that we’ll need numerous energy breakthroughs to have any hope of cleaning up all parts of the economy and the poorest parts of the world.
+		Confidence =  0.99254537
+		Subject =  Bill
+		Object =  Melinda Gates Foundation
+		Relation =  per:employee_of
+
+
+		Adding relation to final set
+
+
+		========== EXTRACTED RELATION ==========
+		Sentence =  The Microsoft cofounder, who is now cochair of the Bill and Melinda Gates Foundation and chair of the investment fund Breakthrough Energy Ventures, sticks to his past argument that we’ll need numerous energy breakthroughs to have any hope of cleaning up all parts of the economy and the poorest parts of the world.
+		Confidence =  0.993087
+		Subject =  Bill
+		Object =  Breakthrough Energy Ventures
+		Relation =  per:employee_of
+
+
+		Adding relation to final set
+
+
+	Processed 5/111 sentences
+	Processed 10/111 sentences
+	Processed 15/111 sentences
+	Processed 20/111 sentences
+	Processed 25/111 sentences
+	Processed 30/111 sentences
+	Processed 35/111 sentences
+	Processed 40/111 sentences
+	Processed 45/111 sentences
+	Processed 50/111 sentences
+	Processed 55/111 sentences
+	Processed 60/111 sentences
+	Processed 65/111 sentences
+	Processed 70/111 sentences
+	Processed 75/111 sentences
+	Processed 80/111 sentences
+	Processed 85/111 sentences
+	Processed 90/111 sentences
+	Processed 95/111 sentences
+	Processed 100/111 sentences
+	Processed 105/111 sentences
+	Processed 110/111 sentences
+	Extracted relations for 2 out of total 111 sentences
+	From this website, the number of relations we got is: 2 (Overall:  19 )
+URL (  8  / 10 ):  https://www.linkedin.com/in/williamhgates
+	Fetching text from URL...
+	Webpage Length (number of characters):  0
+	Annotating the webpage using SpaCy
+
+	Extracted  0  sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+	Extracted relations for 0 out of total 0 sentences
+	From this website, the number of relations we got is: 0 (Overall:  19 )
+URL (  9  / 10 ):  https://www.forbes.com/profile/bill-gates/
+	Fetching text from URL...
+	Webpage Length (number of characters):  161
+	Annotating the webpage using SpaCy
+
+	Extracted  2  sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+	Extracted relations for 0 out of total 2 sentences
+	From this website, the number of relations we got is: 0 (Overall:  19 )
+URL (  10  / 10 ):  https://www.biography.com/business-figure/bill-gates
+	Fetching text from URL...
+	Webpage Length (number of characters):  20000
+	Annotating the webpage using SpaCy
+
+	Extracted  193  sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+		========== EXTRACTED RELATION ==========
+		Sentence =  Entrepreneur and businessman Bill Gates and his business partner Paul Allen founded and built the world s largest software business, Microsoft, through technological innovation, keen business strategy and aggressive business tactics.
+		Confidence =  0.9923419
+		Subject =  Bill Gates
+		Object =  Microsoft
+		Relation =  per:employee_of
+
+
+		Adding relation to final set
+
+
+	Processed 5/193 sentences
+	Processed 10/193 sentences
+	Processed 15/193 sentences
+	Processed 20/193 sentences
+	Processed 25/193 sentences
+	Processed 30/193 sentences
+	Processed 35/193 sentences
+	Processed 40/193 sentences
+	Processed 45/193 sentences
+		========== EXTRACTED RELATION ==========
+		Sentence =  After attending college for two years, Allen dropped out and moved to Boston, Massachusetts, to work for Honeywell.
+		Confidence =  0.99455035
+		Subject =  Allen
+		Object =  Honeywell
+		Relation =  per:employee_of
+
+
+		Adding relation to final set
+
+
+	Processed 50/193 sentences
+	Processed 55/193 sentences
+		========== EXTRACTED RELATION ==========
+		Sentence =  Allen was hired at MITS, and Gates soon left Harvard to work with him.
+		Confidence =  0.9798141
+		Subject =  Allen
+		Object =  Gates
+		Relation =  per:employee_of
+
+
+		Adding relation to final set
+
+
+		========== EXTRACTED RELATION ==========
+		Sentence =  Allen was hired at MITS, and Gates soon left Harvard to work with him.
+		Confidence =  0.99538535
+		Subject =  Allen
+		Object =  Harvard
+		Relation =  per:employee_of
+
+
+		Adding relation to final set
+
+
+	Processed 60/193 sentences
+		========== EXTRACTED RELATION ==========
+		Sentence =  In 1975, Gates and Allen formed Micro-Soft, a blend of "micro-computer" and "software" (they dropped the hyphen within a year).
+		Confidence =  0.88005036
+		Subject =  Allen
+		Object =  Micro-Soft
+		Relation =  per:employee_of
+
+
+		Adding relation to final set
+
+
+	Processed 65/193 sentences
+	Processed 70/193 sentences
+	Processed 75/193 sentences
+	Processed 80/193 sentences
+	Processed 85/193 sentences
+	Processed 90/193 sentences
+		========== EXTRACTED RELATION ==========
+		Sentence =  Mary was highly respected and well connected with her membership on several corporate boards, including IBM s.
+		Confidence =  0.98245835
+		Subject =  Mary
+		Object =  IBM
+		Relation =  per:employee_of
+
+
+		Adding relation to final set
+
+
+	Processed 95/193 sentences
+	Processed 100/193 sentences
+	Processed 105/193 sentences
+	Processed 110/193 sentences
+		========== EXTRACTED RELATION ==========
+		Sentence =  In mid-1981, Gates and Allen incorporated Microsoft, and Gates was appointed president and chairman of the board.
+		Confidence =  0.9513508
+		Subject =  Allen
+		Object =  Gates
+		Relation =  per:employee_of
+
+
+		Adding relation to final set
+
+
+	Processed 115/193 sentences
+	Processed 120/193 sentences
+	Processed 125/193 sentences
+	Processed 130/193 sentences
+	Processed 135/193 sentences
+	Processed 140/193 sentences
+	Processed 145/193 sentences
+	Processed 150/193 sentences
+	Processed 155/193 sentences
+	Processed 160/193 sentences
+	Processed 165/193 sentences
+	Processed 170/193 sentences
+		========== EXTRACTED RELATION ==========
+		Sentence =  In 2000, Gates stepped down from the day-to-day operations of Microsoft, turning over the job of CEO to college friend Steve Ballmer, who had been with Microsoft since 1980.
+		Confidence =  0.9934621
+		Subject =  Steve Ballmer
+		Object =  Microsoft
+		Relation =  per:employee_of
+
+
+		Adding relation to final set
+
+
+	Processed 175/193 sentences
+	Processed 180/193 sentences
+	Processed 185/193 sentences
+	Processed 190/193 sentences
+	Extracted relations for 32 out of total 193 sentences
+	From this website, the number of relations we got is: 8 (Overall:  27 )
+Required number of relations were found, stopping search
+Number of valid relations found = 27
+============================= ALL RELATIONS FOR  per:employee_of ( 27 ) ==============================
+Confidence:  0.99727714              | Subject:  Gates              | Object:  Berkshire Hathaway
+Confidence:  0.9955553              | Subject:  Ballmer              | Object:  Microsoft
+Confidence:  0.99538535              | Subject:  Allen              | Object:  Harvard
+Confidence:  0.99471635              | Subject:  Gates              | Object:  Microsoft
+Confidence:  0.99455035              | Subject:  Allen              | Object:  Honeywell
+Confidence:  0.9934621              | Subject:  Steve Ballmer              | Object:  Microsoft
+Confidence:  0.993087              | Subject:  Bill              | Object:  Breakthrough Energy Ventures
+Confidence:  0.99262774              | Subject:  Steve Lohr              | Object:  Microsoft
+Confidence:  0.99254537              | Subject:  Bill              | Object:  Melinda Gates Foundation
+Confidence:  0.9923419              | Subject:  Bill Gates              | Object:  Microsoft
+Confidence:  0.9901818              | Subject:  Gates              | Object:  Microsoft
+Confidence:  0.98912096              | Subject:  Satya Nadella              | Object:  Microsoft
+Confidence:  0.9890078              | Subject:  Daisuke Wakabayashi              | Object:  Microsoft
+Confidence:  0.9889342              | Subject:  Jeff Bezos              | Object:  Gates
+Confidence:  0.98852307              | Subject:  Daniel Ives              | Object:  Wedbush Securities
+Confidence:  0.98681915              | Subject:  Bill Gates              | Object:  Microsoft Corporation
+Confidence:  0.98376435              | Subject:  William Henry Gates III              | Object:  Microsoft Corporation
+Confidence:  0.98245835              | Subject:  Mary              | Object:  IBM
+Confidence:  0.9798141              | Subject:  Allen              | Object:  Gates
+Confidence:  0.9513508              | Subject:  Allen              | Object:  Gates
+Confidence:  0.9486365              | Subject:  Gates              | Object:  Microsoft
+Confidence:  0.9446849              | Subject:  Allen              | Object:  Microsoft
+Confidence:  0.9180271              | Subject:  Bill Gates              | Object:  Microsoft Corporation
+Confidence:  0.9124967              | Subject:  Gates              | Object:  the Bill & Melinda Gates Foundation
+Confidence:  0.88005036              | Subject:  Allen              | Object:  Micro-Soft
+Confidence:  0.81609255              | Subject:  Bill Gates              | Object:  Microsoft Corporation
+Confidence:  0.80464137              | Subject:  Gates              | Object:  MITS
+======== Total Iterations : 1
+]0;av2955@instance-1: ~/SpanBERT[01;32mav2955@instance-1[00m:[01;34m~/SpanBERT[00m$ exit
+exit
+
+Script done on 2021-03-15 15:40:12+0000
